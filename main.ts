@@ -17,8 +17,10 @@ input.onButtonPressed(Button.B, function () {
 })
 function wasItCaught () {
     if (guy.isTouching(egg)) {
-        music.playMelody("C D E F G A B C5 ", 1000)
+        music.playMelody("C D E F G A B C5 ", 1500)
         game.addScore(1)
+    } else {
+        music.playTone(131, music.beat(BeatFraction.Sixteenth))
     }
 }
 let egg: game.LedSprite = null
