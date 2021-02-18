@@ -1,5 +1,5 @@
 function createEgg () {
-    egg = game.createSprite(randint(0, 5), 0)
+    egg = game.createSprite(randint(0, 4), 0)
 }
 input.onButtonPressed(Button.A, function () {
     guy.move(-1)
@@ -25,7 +25,7 @@ function wasItCaught () {
 }
 let egg: game.LedSprite = null
 let guy: game.LedSprite = null
-guy = game.createSprite(2, 5)
+guy = game.createSprite(2, 4)
 game.startCountdown(30000)
 basic.forever(function () {
     while (game.isRunning()) {
